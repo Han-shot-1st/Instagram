@@ -1,0 +1,248 @@
+*{
+    margin:0;
+
+}
+body {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+
+}
+.total-container {
+    display: flex;
+    justify-content: center;
+}
+.master-ctr {
+    width: 350px;
+    max-width: 350px;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+
+}
+.main-ctr {
+    width: 350px;
+    height: 378;
+    background-color: rgb(250, 250, 250);
+
+}
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 40px 20px;
+}
+.iglogo {
+    width: 100%;
+    height: 55px;
+    background-image: url("ig-logo.png");
+    background-size: cover;
+    background-position: center;
+}
+.iglogo {
+    margin-bottom: 35px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+    background-color: #e9e7e750;
+    font-size: 12px;
+}
+form input:nth-of-type(2) {
+    margin-bottom: 13px;
+    
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(178, 223, 252);
+    border:none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.or-ctr{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px ;
+}
+.line {
+    height: 1px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: lightgrey;
+}
+.or-ctr > p {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 600;
+    color: grey;
+    margin: 0px 15px;
+}
+.fblogin{
+    display: flex;
+    align-items: center;
+}
+.fblogo {
+    height: 15px;
+    width: 15px;
+    background-image: url("facebook.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+
+}
+.fblogin > a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    color: rgb(103, 102, 175);
+
+}
+.main-flex > a {
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(66, 66, 104);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.donthave {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: rgb(250, 250, 250);
+    width: 350px;
+    padding: 20px 0;
+    justify-self: flex-start;
+    margin-bottom: 50px;
+}
+.donthave > p,a {
+    
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.donthave > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0095f6;
+}
+.getapp{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.getapp > p {
+    margin:10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    text-align: center;
+
+}
+.downloads {
+    display: flex;
+    width: 350px;
+    justify-content:space-evenly;
+    flex-grow: 0;
+    margin: 10px 0 40px;
+    flex-wrap: wrap;
+
+
+}
+.ios {
+    height: 40px;
+    width: 136px;
+    background-image: url('ios.png');
+    background-size: contain;
+}
+.android {
+    max-width: 100%;
+    height: 40px;
+    width: 134px;
+    max-width: 100%;
+    background-image: url("android.png");
+    background-size: contain;
+    align-self: stretch ;
+}
+.android, .ios {
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-direction: column;
+    align-content: center;
+
+
+}
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer > div > a {
+    margin: 3px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: grey;
+}
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 50px;
+}
+.language {
+    border: none;
+    margin-right: 15px;
+}
+.language, .dropdown > p {
+    color: grey;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 450px) {
+    .master-ctr {
+        margin-bottom:40px;
+        margin-top: 35px;
+    }
+    .main-ctr {
+        background-color: white;
+        border:1px solid lightgrey;
+    }
+    .donthave {
+        border: 1px solid lightgrey;
+        background-color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .downloads {
+        margin: 10px 0 0;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .phone {
+        margin: 10px 40px ;
+        background-image: url("phones.PNG");
+        width: 370px;
+        height: 580px;
+        background-size: cover;
+        background-repeat: no;
+        }
+
+}
